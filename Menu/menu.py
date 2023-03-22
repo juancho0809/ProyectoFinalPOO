@@ -35,35 +35,40 @@ def opcion():
                     print("-----REGISTRAR USUARIO-----")
                     from Menu import puntos
                     cliente1 = puntos.Cliente("XXX",0,"XXX")
-                    cliente1.registrar()
+                    cliente1.registrar(1)
                     
         elif opcion == 2:
                     print("----REALIZAR COMPRA----")
                     from Menu import puntos
                     
-                    cliente1 = puntos.Puntos("XXX",0,"XXX")
+                    cliente1 = puntos.Puntos("XXX",0,"XXX",0)
                     cliente1.realizar_compra()
                     
         elif opcion == 3:
                     print("----RECLAMAR PROMOCIÓN----")
                     from Menu import puntos
                     
-                    cliente1 = puntos.Puntos("XXX",0,"XXX")
-                    cliente1.reclamar_promocion(1500)
+                    cliente1 = puntos.Puntos("XXX",0,"XXX",0)
+                    cliente1.reclamar_promocion(100)
                     
         elif opcion == 4:
+                    print("----RECLAMAR PROMOCIÓN----")
+                    from Menu import puntos
                     print("Reclamar Promoción 2")
-                    
+                    cliente1 = puntos.Puntos("XXX",0,"XXX",0)
+                    cliente1.reclamar_promocion(200)
+
         elif opcion == 5:
+                    print("----RECLAMAR PROMOCIÓN----")
+                    from Menu import puntos
                     print("Reclamar Promoción 3")
-                    
-        elif opcion == 6:
-                    #log out
-                    print("Salir usuario")
+                    cliente1 = puntos.Puntos("XXX",0,"XXX",0)
+                    cliente1.reclamar_promocion(300)
+ 
         elif opcion == 2023:#Opción para salir del sistema
             print('Ha salido del sistema') 
             exit()
-        elif opcion < 1 or opcion > 7 or opcion==2023:#Validación opción
+        elif opcion < 1 or opcion > 5 or opcion==2023:#Validación opción
                     clear()                   
                     print('Opción incorrecta.\n')
                     opcion = 1
